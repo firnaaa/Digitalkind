@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations for scroll reveal */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.7s ease-out forwards;
+}
+
+/* Hide scrollbar for testimonials */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Digitalkind - Calming matcha, cream, white palette */
+    --background: 40 40% 98%;
+    --foreground: 140 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 15% 20%;
+
+    /* Matcha green primary */
+    --primary: 75 35% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Cream secondary */
+    --secondary: 40 45% 92%;
+    --secondary-foreground: 140 15% 20%;
+
+    /* Muted cream tones */
+    --muted: 40 30% 90%;
+    --muted-foreground: 140 10% 45%;
+
+    /* Light matcha accent */
+    --accent: 75 40% 85%;
+    --accent-foreground: 140 15% 25%;
+
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 25% 88%;
+    --input: 40 25% 88%;
+    --ring: 75 35% 55%;
+
+    --radius: 1rem;
+    
+    /* Custom design tokens */
+    --gradient-calm: linear-gradient(135deg, hsl(75 40% 90%), hsl(40 50% 95%));
+    --gradient-matcha: linear-gradient(135deg, hsl(75 35% 55%), hsl(75 45% 70%));
+    --shadow-soft: 0 4px 20px -4px hsl(75 30% 60% / 0.15);
+    --shadow-hover: 0 8px 30px -6px hsl(75 30% 60% / 0.25);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 140 25% 8%;
+    --foreground: 40 45% 92%;
+
+    --card: 140 20% 12%;
+    --card-foreground: 40 45% 92%;
+
+    --popover: 140 20% 12%;
+    --popover-foreground: 40 45% 92%;
+
+    --primary: 75 45% 55%;
+    --primary-foreground: 140 25% 8%;
+
+    --secondary: 140 18% 15%;
+    --secondary-foreground: 40 45% 92%;
+
+    --muted: 140 18% 18%;
+    --muted-foreground: 40 25% 65%;
+
+    --accent: 75 35% 25%;
+    --accent-foreground: 40 45% 92%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 40 45% 92%;
+
+    --border: 140 18% 18%;
+    --input: 140 18% 18%;
+    --ring: 75 45% 55%;
+    
+    /* Dark mode custom tokens */
+    --gradient-calm: linear-gradient(135deg, hsl(140 25% 15%), hsl(40 35% 20%));
+    --gradient-matcha: linear-gradient(135deg, hsl(75 40% 25%), hsl(75 45% 35%));
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-hover: 0 8px 30px -6px hsl(75 40% 30% / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom Scrollbar Hide */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Interactive Animations */
+@layer utilities {
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-hover;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-[0_0_20px_hsl(75_35%_55%_/_0.4)];
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  .hover-rotate {
+    @apply transition-transform duration-300 hover:rotate-3;
+  }
+  
+  .card-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .card-3d:hover {
+    transform: rotateY(5deg) rotateX(5deg) translateY(-8px);
+  }
+  
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  
+  /* Scale in animation */
+  @keyframes scale-in {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .animate-scale-in {
+    animation: scale-in 0.3s ease-out forwards;
+  }
+  
+  /* Parallax utilities */
+  .parallax-slow {
+    will-change: transform;
+  }
+  
+  .parallax-medium {
+    will-change: transform;
+  }
+  
+  .parallax-fast {
+    will-change: transform;
+  }
+  
+  /* WhatsApp Chat Animation */
+  @keyframes chat-slide-right {
+    0%, 100% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    10%, 90% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes chat-slide-left {
+    0%, 100% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    10%, 90% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-chat-slide-right {
+    animation: chat-slide-right 6s ease-in-out infinite;
+  }
+  
+  .animate-chat-slide-left {
+    animation: chat-slide-left 6s ease-in-out infinite;
+  }
+}
