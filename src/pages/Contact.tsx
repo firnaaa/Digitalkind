@@ -4,9 +4,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useRef } from "react";
-
+ 
 // Import images
-import contactEmail from "@/assets/contact-email.jpg";
+import contactEmail from "@/assets/contact-email.png";
 import quote1 from "@/assets/quotes/quote-1.jpg";
 import quote2 from "@/assets/quotes/quote-2.jpg";
 import quote3 from "@/assets/quotes/quote-3.jpg";
@@ -224,7 +224,7 @@ const Contact = () => {
           <div className="mt-16 animate-fade-in">
             <div className="text-center mb-10">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                <span className="text-primary">{language === 'id' ? "Kata-Kata Penyemangat" : "Words of Encouragement"}</span>
+                <span className="text-primary">{language === 'id' ? "Kalimat afirmasi" : "Words of Affirmation"}</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 {language === 'id' 

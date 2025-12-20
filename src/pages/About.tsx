@@ -3,21 +3,21 @@ import { Target, Eye, CheckCircle, ChevronLeft, ChevronRight, ExternalLink } fro
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useRef } from "react";
 import aboutBg from "@/assets/about-bg.jpg";
-import aboutPurpose from "@/assets/about-purpose.jpg";
-import aboutVision from "@/assets/about-vision.jpg";
-import aboutMission from "@/assets/about-mission.jpg";
+import aboutPurpose from "@/assets/about-purpose.png";
+import aboutVision from "@/assets/about-vision.png";
+import aboutMission from "@/assets/about-mission.png";
 
 // News images
-import news1 from "@/assets/news/news-1.jpg";
-import news2 from "@/assets/news/news-2.jpg";
-import news3 from "@/assets/news/news-3.jpg";
-import news4 from "@/assets/news/news-4.jpg";
-import news5 from "@/assets/news/news-5.jpg";
-import news6 from "@/assets/news/news-6.jpg";
-import news7 from "@/assets/news/news-7.jpg";
-import news8 from "@/assets/news/news-8.jpg";
-import news9 from "@/assets/news/news-9.jpg";
-import news10 from "@/assets/news/news-10.jpg";
+import news1 from "@/assets/news/news-1.png";
+import news2 from "@/assets/news/news-2.png";
+import news3 from "@/assets/news/news-3.png";
+import news4 from "@/assets/news/news-4.png";
+import news5 from "@/assets/news/news-5.png";
+import news6 from "@/assets/news/news-6.png";
+import news7 from "@/assets/news/news-7.png";
+import news8 from "@/assets/news/news-8.png";
+import news9 from "@/assets/news/news-9.png";
+import news10 from "@/assets/news/news-10.png";
 
 const About = () => {
   const { t, language } = useLanguage();

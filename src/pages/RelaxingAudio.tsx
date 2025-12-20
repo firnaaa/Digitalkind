@@ -94,8 +94,8 @@ const RelaxingAudio = () => {
     {
       id: "animals",
       icon: Bird,
-      titleKey: "animalsTitle",
-      descKey: "animalsDesc",
+      titleKey: "animals",
+      descKey: "suara binatang yang menenangkan",
       color: "bg-emerald-500/10",
       audios: [
         { id: "3JceqUgXQPaX6RYakFUy4X", title: "Kicau burung", url: "https://open.spotify.com/track/3JceqUgXQPaX6RYakFUy4X", image: animals1 },
@@ -113,8 +113,8 @@ const RelaxingAudio = () => {
     {
       id: "ocean",
       icon: Waves,
-      titleKey: "oceanTitle",
-      descKey: "oceanDesc",
+      titleKey: "ocean",
+      descKey: "nikmati suasana laut dan ombak",
       color: "bg-blue-500/10",
       audios: [
         { id: "0VEfKc8Hi0ATp7vQ7cpoLY", title: "Ombak tenang", url: "https://open.spotify.com/track/0VEfKc8Hi0ATp7vQ7cpoLY", image: ocean1 },
@@ -132,8 +132,8 @@ const RelaxingAudio = () => {
     {
       id: "healFrequency",
       icon: Wind,
-      titleKey: "healingTitle",
-      descKey: "healingDesc",
+      titleKey: "healing frequency",
+      descKey: "nikmati frekuensi healing yang tepat",
       color: "bg-purple-500/10",
       audios: [
         { id: "6foPAR4znfqXrCZxt4OMqt", title: "Positif energi", url: "https://open.spotify.com/track/6foPAR4znfqXrCZxt4OMqt", image: healing1 },
@@ -151,8 +151,8 @@ const RelaxingAudio = () => {
     {
       id: "rain",
       icon: CloudRain,
-      titleKey: "rainTitle",
-      descKey: "rainDesc",
+      titleKey: "rain",
+      descKey: "suasana hujan yang menenangkan pikiran",
       color: "bg-cyan-500/10",
       audios: [
         { id: "5qGTFA3qALSfVvmtVUSvcO", title: "Peace of rain", url: "https://open.spotify.com/track/5qGTFA3qALSfVvmtVUSvcO", image: rain1 },
@@ -170,8 +170,8 @@ const RelaxingAudio = () => {
     {
       id: "piano",
       icon: Music2,
-      titleKey: "pianoTitle",
-      descKey: "pianoDesc",
+      titleKey: "piano",
+      descKey: "alunan piano lembut nan menyentuh jiwa",
       color: "bg-pink-500/10",
       audios: [
         { id: "2D328fT45V2fBeJjCizwvz", title: "A thousand year piano", url: "https://open.spotify.com/track/2D328fT45V2fBeJjCizwvz", image: piano1 },
@@ -189,8 +189,8 @@ const RelaxingAudio = () => {
     {
       id: "travel",
       icon: Plane,
-      titleKey: "travelTitle",
-      descKey: "travelDesc",
+      titleKey: "travel",
+      descKey: "nikmati perjalanan yang menyenangkan",
       color: "bg-orange-500/10",
       audios: [
         { id: "1W45fawBuiqBxuUCkBmRSX", title: "Airport", url: "https://open.spotify.com/track/1W45fawBuiqBxuUCkBmRSX", image: travel1 },
@@ -241,10 +241,10 @@ const RelaxingAudio = () => {
           {/* Header */}
           <div className="text-center mb-16 animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-primary">{t("audioTitle")}</span>
+              <span className="text-primary">{t("audio")}</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              {t("audioDesc")}
+              {t("audio menenangkan")}
             </p>
           </div>
 

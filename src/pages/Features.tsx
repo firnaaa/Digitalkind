@@ -8,24 +8,24 @@ import { useState, useRef } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
 // Import poster images
-import eduPoster1 from "@/assets/posters/edu-poster-1.jpg";
-import eduPoster2 from "@/assets/posters/edu-poster-2.jpg";
-import eduPoster3 from "@/assets/posters/edu-poster-3.jpg";
-import eduPoster4 from "@/assets/posters/edu-poster-4.jpg";
-import eduPoster5 from "@/assets/posters/edu-poster-5.jpg";
-import eduPoster6 from "@/assets/posters/edu-poster-6.jpg";
-import eduPoster7 from "@/assets/posters/edu-poster-7.jpg";
-import eduPoster8 from "@/assets/posters/edu-poster-8.jpg";
-import eduPoster9 from "@/assets/posters/edu-poster-9.jpg";
-import eduPoster10 from "@/assets/posters/edu-poster-10.jpg";
+import eduPoster1 from "@/assets/posters/edu-poster-1.png";
+import eduPoster2 from "@/assets/posters/edu-poster-2.png";
+import eduPoster3 from "@/assets/posters/edu-poster-3.png";
+import eduPoster4 from "@/assets/posters/edu-poster-4.png";
+import eduPoster5 from "@/assets/posters/edu-poster-5.png";
+import eduPoster6 from "@/assets/posters/edu-poster-6.png";
+import eduPoster7 from "@/assets/posters/edu-poster-7.png";
+import eduPoster8 from "@/assets/posters/edu-poster-8.png";
+import eduPoster9 from "@/assets/posters/edu-poster-9.png";
+import eduPoster10 from "@/assets/posters/edu-poster-10.png";
 
 // Import feature images
-import featureArticles from "@/assets/feature-articles.jpg";
-import featureTips from "@/assets/feature-tips.jpg";
-import featureAudio from "@/assets/feature-audio.jpg";
-import featurePodcast from "@/assets/feature-podcast.jpg";
-import featurePosters from "@/assets/feature-posters.jpg";
-import featureCommunity from "@/assets/feature-community.jpg";
+import featureArticles from "@/assets/feature-articles.png";
+import featureTips from "@/assets/feature-tips.png";
+import featureAudio from "@/assets/feature-audio.png";
+import featurePodcast from "@/assets/feature-podcast.png";
+import featurePosters from "@/assets/feature-posters.png";
+import featureCommunity from "@/assets/feature-community.png";
 
 const Features = () => {
   const { t, language } = useLanguage();

@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import heroImage from "@/assets/hero-calm.jpg";
 import homeBg from "@/assets/home-bg.jpg";
-import gentleApproach from "@/assets/gentle-approach.jpg";
-import richResources from "@/assets/rich-resources.jpg";
-import supportiveCommunity from "@/assets/supportive-community.jpg";
+import gentleApproach from "@/assets/gentle-approach.png";
+import richResources from "@/assets/rich-resources.png";
+import supportiveCommunity from "@/assets/supportive-community.png";
 import anxietyPhoto1 from "@/assets/anxiety-photo-1.jpg";
 import anxietyPhoto2 from "@/assets/anxiety-photo-2.jpg";
 import anxietyPhoto3 from "@/assets/anxiety-photo-3.jpg";
@@ -373,9 +373,9 @@ const Index = () => {
               </div>
 
               {/* WhatsApp Chat Animation */}
-              <div className="relative h-24 mb-4 overflow-hidden">
+              <div className="relative h-28 md:h-40 mb-4 overflow-hidden">
                 {/* Message 1 - From Right */}
-                <div className="absolute right-2 top-0 max-w-[85%] animate-chat-slide-right">
+                <div className="absolute right-2 top-0 max-w-[80%] animate-chat-slide-right">
                   <div className="bg-muted/80 backdrop-blur-sm rounded-2xl rounded-tr-sm px-4 py-2.5 shadow-md border border-border/50">
                     <p className="text-xs md:text-sm text-foreground text-left">
                       {t("chatMessage1")}
@@ -384,7 +384,7 @@ const Index = () => {
                 </div>
                 
                 {/* Message 2 - From Left */}
-                <div className="absolute left-2 top-12 max-w-[85%] animate-chat-slide-left" style={{ animationDelay: '0.8s' }}>
+                <div className="absolute left-2 top-20 max-w-[80%] animate-chat-slide-left" style={{ animationDelay: '0.8s' }}>
                   <div className="bg-primary/20 backdrop-blur-sm rounded-2xl rounded-tl-sm px-4 py-2.5 shadow-md border border-primary/30">
                     <p className="text-xs md:text-sm text-foreground text-left font-medium">
                       {t("chatMessage2")}
@@ -392,14 +392,14 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              
+              <div className="flex flex-col items-center mt-6"></div>
               {/* Heart Icon */}
-              <div className="w-14 h-14 bg-primary/20 rounded-full flex items-center justify-center mb-3 mx-auto group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 group-hover:shadow-lg group-hover:bg-primary/30">
+              <div className="w-14 h-14 bg-primary/20 rounded-full flex items-center justify-center mb-2 mx-auto group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 group-hover:shadow-lg group-hover:bg-primary/30">
                 <HeartPulse className="w-7 h-7 text-primary group-hover:animate-pulse" />
               </div>
               
               {/* Title */}
-              <h3 className="text-lg md:text-xl font-bold mb-3 text-primary group-hover:scale-105 transition-transform duration-300">
+              <h3 className="text-lg md:text-xl font-bold mb-4 text-primary group-hover:scale-105 transition-transform duration-300">
                 {t("anxietyFirstAidKit")}
               </h3>
               
@@ -550,7 +550,7 @@ const Index = () => {
           
           {/* CTA Box Below Testimonials */}
           <div 
-            className="scroll-animate mt-12 bg-gradient-to-br from-primary/10 via-accent/20 to-secondary rounded-3xl p-10 text-center relative overflow-hidden group hover:shadow-hover transition-all duration-500 backdrop-blur-sm max-w-2xl mx-auto"
+            className="scroll-animate mt-12 bg-gradient-to-br from-primary/10 via-accent/20 to-secondary rounded-3xl p-10 text-center relative overflow-hidden group hover:shadow-hover transition-all duration-500 back'''''drop-blur-sm max-w-2xl mx-auto"
             style={{ transform: `translateY(${-scrollY * 0.01}px)` }}
           >
             {/* Animated Background Effect */}

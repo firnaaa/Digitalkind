@@ -8,21 +8,21 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 // Import podcast images
-import podcast1 from "@/assets/podcast/podcast-1-yang-kami-rasakan.jpg";
-import podcast2 from "@/assets/podcast/podcast-2-cara-ampuh.jpg";
-import podcast3 from "@/assets/podcast/podcast-3-anxiety-gaada-habisnya.jpg";
-import podcast4 from "@/assets/podcast/podcast-4-melepaskan-kekhawatiran.jpg";
-import podcast5 from "@/assets/podcast/podcast-5-pertolongan-pertama.jpg";
-import podcast6 from "@/assets/podcast/podcast-6-mengenal-anxiety.jpg";
-import podcast7 from "@/assets/podcast/podcast-7-kenali-anxiety.jpg";
-import podcast8 from "@/assets/podcast/podcast-8-definisi-gejala.jpg";
-import podcast9 from "@/assets/podcast/podcast-9-what-is-anxiety.jpg";
-import podcast10 from "@/assets/podcast/podcast-10-tips-mengatasi.jpg";
-import podcast11 from "@/assets/podcast/podcast-11-positif-afirmasi.jpg";
-import podcast12 from "@/assets/podcast/podcast-12-bedanya-kecemasan.jpg";
-import podcast13 from "@/assets/podcast/podcast-13-mengenal-bersama.jpg";
-import podcast14 from "@/assets/podcast/podcast-14-peduli-kenali.jpg";
-import podcast15 from "@/assets/podcast/podcast-15-kecemasan-gangguan.jpg";
+import podcast1 from "@/assets/podcast/podcast-1-yang-kami-rasakan.png";
+import podcast2 from "@/assets/podcast/podcast-2-cara-ampuh.png";
+import podcast3 from "@/assets/podcast/podcast-3-anxiety-gaada-habisnya.png";
+import podcast4 from "@/assets/podcast/podcast-4-melepaskan-kekhawatiran.png";
+import podcast5 from "@/assets/podcast/podcast-5-pertolongan-pertama.png";
+import podcast6 from "@/assets/podcast/podcast-6-mengenal-anxiety.png";
+import podcast7 from "@/assets/podcast/podcast-7-kenali-anxiety.png";
+import podcast8 from "@/assets/podcast/podcast-8-definisi-gejala.png";
+import podcast9 from "@/assets/podcast/podcast-9-what-is-anxiety.png";
+import podcast10 from "@/assets/podcast/podcast-10-tips-mengatasi.png";
+import podcast11 from "@/assets/podcast/podcast-11-positif-afirmasi.png";
+import podcast12 from "@/assets/podcast/podcast-12-bedanya-kecemasan.png";
+import podcast13 from "@/assets/podcast/podcast-13-mengenal-bersama.png";
+import podcast14 from "@/assets/podcast/podcast-14-peduli-kenali.png";
+import podcast15 from "@/assets/podcast/podcast-15-kecemasan-gangguan.png";
 
 const Podcasts = () => {
   const { t } = useLanguage();
@@ -96,8 +96,8 @@ const Podcasts = () => {
           <div className="mb-16">
             <Card className="overflow-hidden border-border/50">
               <CardHeader>
-                <CardTitle className="text-2xl md:text-3xl">{t("spotifyPlaylistTitle")}</CardTitle>
-                <CardDescription>{t("spotifyPlaylistDesc")}</CardDescription>
+                <CardTitle className="text-2xl md:text-3xl">{t("spotify playlist")}</CardTitle>
+                <CardDescription>{t("spotify playlist abouty anxiety")}</CardDescription>
               </CardHeader>
               <CardContent>
                 {!selectedSpotify ? (
@@ -173,8 +173,8 @@ const Podcasts = () => {
           <div>
             <Card className="overflow-hidden border-border/50">
               <CardHeader>
-                <CardTitle className="text-2xl md:text-3xl">{t("youtubePlaylistTitle")}</CardTitle>
-                <CardDescription>{t("youtubePlaylistDesc")}</CardDescription>
+                <CardTitle className="text-2xl md:text-3xl">{t("youtube playlist")}</CardTitle>
+                <CardDescription>{t("Playlist youtube tentang anxiety")}</CardDescription>
               </CardHeader>
               <CardContent>
                 {!selectedYoutube ? (
