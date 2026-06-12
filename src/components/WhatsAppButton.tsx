@@ -14,7 +14,7 @@ const WhatsAppButton = () => {
   
   return (
     <a
-      href="https://wa.me/ais/1115307430372997?s=5"
+      href="https://l.instagram.com/?u=https%3A%2F%2Faistudio.instagram.com%2Fai%2F1115307430372997%3Futm_source%3Dai_agent%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnHU7wpGueTMRuSQIAmQur4o-wt1whnUxL5vrloSYTXU-QjRGh2hNZoI_6WGU_aem_8xQuWcsH9LXiUMLd7_Ob7g&e=AUD5GbtUg1zUSBgA0xo34QtqccN9AtV59_QozAkiJ_5mtOsigzUaAdndR3tToOQfEIpNNAOycgVjeG5iucCq0gXc3JAWLTlRgJkHF8yoAGuGCVmd9IHsobSVMYLwjBUAIOff7Uc"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 group flex items-center gap-3"
